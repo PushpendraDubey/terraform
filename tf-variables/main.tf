@@ -13,11 +13,11 @@ provider "aws" {
 
 data "aws_ami" "linux" {
   most_recent = true
-  owners = [amazon]
+  owners = ["amazon"]
 
   filter {
     name = "name"
-    values = "al2023-ami-2023*"
+    values = ["al2023-ami-2023*-x86_64"]
   }
 
   filter {
